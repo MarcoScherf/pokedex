@@ -1,0 +1,70 @@
+:root {
+    --bg-normal: #dedbd2;
+    --bg-fighting: #ce9f9a;
+    --bg-flying: #d8cff5;
+    --bg-poison: #eda0cd;
+    --bg-ground: #e9e2cd;
+    --bg-rock: #dbcd9b;
+    --bg-bug: #dce0ac;
+    --bg-ghost: #b5aac9;
+    --bg-steel: #dedde6;
+    --bg-fire: #fdc297;
+    --bg-water: #bcc8e8;
+    --bg-grass: #bae5a2;
+    --bg-electric: #fbe292;
+    --bg-psychic: #eabec7;
+    --bg-ice: #caeceb;
+    --bg-dragon: #ba9cff;
+    --bg-dark: #b8aaa1;
+    --bg-fairy: #f9bbef;
+    --bg-unknow: #fff;
+    --bg-shadow: #555;
+}
+
+body {
+    margin: 0;
+}
+
+#pokemon-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #698499;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    min-width: 250px;
+    padding: 10px;
+    margin: 20px;
+    text-transform: capitalize;
+    /* -webkit-box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.4); */
+}
+
+.name-id {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.type {
+    width: fit-content;
+    margin-left: 32px;
+    padding: 5px 10px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.img {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.pokemon-img {
+    width: 150px;
+}
