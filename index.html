@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +8,24 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Pokedex</title>
+    <style>
+        button {
+            padding: 20px;
+        }
+    </style>
 </head>
 
 <body onload="loadPokemon()">
-    <main id="pokemon-card">
-
+    <header>
+    </header>
+    <main>
+        <div id="pokemon-card"></div>
+        <button onclick="morePokemon()">weiter Pokemon laden</button>
     </main>
+    <footer>
+
+    </footer>
+
 </body>
 
 </html>

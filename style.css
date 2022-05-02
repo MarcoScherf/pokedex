@@ -1,4 +1,5 @@
 :root {
+    --bg: #698499;
     --bg-normal: #dedbd2;
     --bg-fighting: #ce9f9a;
     --bg-flying: #d8cff5;
@@ -25,11 +26,17 @@ body {
     margin: 0;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--bg);
+}
+
 #pokemon-card {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #698499;
 }
 
 .card {
@@ -40,8 +47,17 @@ body {
     padding: 10px;
     margin: 20px;
     text-transform: capitalize;
-    /* -webkit-box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.4); */
+    -webkit-box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.4);
+    background: url(img/bg-card.png) no-repeat;
+    background-position-x: 80%;
+    background-position-y: 80%;
+    transition: all 300ms ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: transform 300ms ease-in-out;
 }
 
 .name-id {
@@ -51,20 +67,34 @@ body {
     width: 100%;
 }
 
+.types {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
 .type {
     width: fit-content;
-    margin-left: 32px;
+    margin: 10px 0 0 32px;
     padding: 5px 10px;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    color: rgb(88, 88, 88);
 }
 
 .img {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
+    justify-content: center;
 }
 
 .pokemon-img {
     width: 150px;
+}
+
+button {
+    background-color: white;
+    border-radius: 12px;
+    width: 200px;
+    margin-bottom: 20px;
 }
